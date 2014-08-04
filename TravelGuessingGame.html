@@ -1,0 +1,33 @@
+<script>
+	
+	var answer = "Nepal"
+	var response
+	var finalcomment
+	
+
+	for (var i = 0; i < 3; i++)
+	{
+		var guess = prompt("If I could go anywhere in the world, where would I go?  You have three guesses total.")
+		
+		if (guess === answer) 
+		{
+			finalcomment = "That's correct!  You either know me well or you're a lucky guesser!"
+			break;
+		} 
+		else if (i > 1)
+		{
+			response = "Oooooh!  I would love to go there, but that's not what I was thinking."
+			finalcomment = "I would love to visit all of those places as well, but I was thinking of Nepal.  Thanks for playing!"
+		}
+
+		else
+		{
+			response = "Oooooh!  I would love to go there, but that's not what I was thinking.  Try again!"
+			
+		};
+		alert(response)
+	}	
+	
+	alert(finalcomment)
+
+</script>
